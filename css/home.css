@@ -1,0 +1,258 @@
+:root{
+    --text-primary: #101d42;
+    --text-secondary: #fbb44c;
+    --text-dark: #2b2922;
+    --text-light: #eaeaea;
+    --text-white: #ffffff;
+    --bg-primary: #141e4c;
+    --bg-secondary: #dfedf5;
+    --bg-dark: #101d42;
+    --bg-light: #ffffff;
+    --button-color: #2bb686;
+    --fs-large: 1rem;
+    --fs-medium: 0.875rem;
+    --fs-small: 0.75rem;
+    --spacing-xl: 2.625rem;
+    --spacing-large: 1.75rem;
+    --spacing-medium: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-tiny: 0.25rem;
+    --mobile-logo-height: 45px;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.welcome{
+    background-color: var(--bg-primary);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+ 
+}
+.parent{
+    padding: 16px;
+    margin: 50px;
+    
+}
+.welcome h1{
+    color: var(--text-light);
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.welcome p{
+    color: var(--text-light);
+    font-size: var(--fs-large);
+}
+.welcome img{
+    
+    height: 24px;
+    width: auto;
+    margin-left: var(--spacing-medium);
+    
+
+}
+.welcome a{
+    background-color: var(--button-color);
+    color: var(--text-light);
+    font-size: var(--fs-medium);
+    text-align: center;
+    padding: var(--spacing-medium);
+    border: 2px solid var(--button-color);
+    border-radius: 5px;
+    width: 260px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+a:hover{
+    background-color: var(--bg-primary);
+}
+.welcome p span{
+    color: var(--text-secondary);
+}
+@media (max-width: 768px) {
+    .welcome h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .welcome img {
+        display: block;
+        
+        margin-top: var(--spacing-medium);
+        margin-left: var(--spacing-small);
+    }
+
+    .welcome a {
+       
+        display: none;
+    }
+
+    .welcome {
+        padding-bottom: 4rem;
+    }
+
+}
+
+/* Sectiunea cursuri */
+.card{
+    margin-bottom: 16px;
+}
+.cursuri h2{
+    padding: 20px;
+    font-weight: bolder;
+}
+.cursuri h5{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.cursuri span {
+    font-size: var(--fs-medium);
+    color: var(--text-dark);
+
+}
+.cursuri .material-icons{
+    vertical-align: middle;
+}
+.cursuri .date, .cursuri .place {
+    padding: var(--spacing-tiny);
+}
+
+.cursuri .place {
+    background-color: var(--text-secondary);
+    margin-left: var(--spacing-tiny);
+}
+
+.cursuri, .cursuri h3{
+    margin-bottom: var(--spacing-medium);
+}
+
+.cursuri .line {
+    height: var(--spacing-tiny);
+    background-color: var(--button-color);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 0;
+   
+}
+
+.iconite{
+    display: flex;
+    
+}
+.where{
+    background-color: var(--text-secondary);
+    margin-left: 10px;
+    padding-right: 5px;
+   
+}
+.courses {
+    padding: var(--spacing-medium) var(--spacing-small);
+}
+
+
+/* Sectiunea Ce este It School */
+
+.ce-este-itschool{
+    background-color: var(--bg-secondary);
+}
+.container{
+    text-align: center;
+    padding: var(--spacing-small);
+}
+.ce-este-itschool h2{
+    padding-top: var(--spacing-large);
+
+}
+.ce-este-itschool h2, .ce-este-itschool p{
+    margin-bottom: var(--spacing-large);
+    text-align: center;
+}
+.imagini{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.img{
+    width: 33%;
+    align-items: center;
+    padding: 16px;
+ 
+}
+.imagini img{
+    width: 100%;
+    height: auto;
+
+}
+@media (max-width: 992px) {
+    .ce-este-itschool .img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ce-este-itschool .img {
+        width: 100%;
+    }
+}
+
+/* Sectiunea Parteneri */
+
+.partners h2 {
+    padding-top: var(--spacing-large);
+    text-align: center;
+    font-weight: 600;
+}
+
+.partners h2, .partners .partners-container {
+    margin-bottom: var(--spacing-large);
+}
+
+.partners .partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin: 0 var(--spacing-xl);
+}
+
+.partners .image-wrapper {
+    width: 100px;
+
+    margin-right: var(--spacing-xl);
+    margin-left: var(--spacing-xl);
+    margin-bottom: var(--spacing-medium);
+}
+
+.partners img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.partners img:hover {
+
+    filter: grayscale(0);
+}
+
+@media (max-width: 768px) {
+    .partners .partners-container {
+        margin: 0 var(--spacing-small);
+    }
+}
+
+@media (max-width: 576px) {
+    .partners .image-wrapper {
+        margin-right: var(--spacing-medium);
+        margin-left: var(--spacing-medium);
+    }
+}

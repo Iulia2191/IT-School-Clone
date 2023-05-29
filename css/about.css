@@ -1,0 +1,130 @@
+:root {
+    --text-primary: #101d42;
+    --text-secondary: #fbb44c;
+    --text-dark: #2b2922;
+    --text-light: #eaeaea;
+    --text-white: #ffffff;
+
+    --bg-primary: #141e4c;
+    --bg-secondary: #dfedf5;
+    --bg-dark: #101d42;
+    --bg-light: #ffffff;
+
+    --button-color: #2bb686;
+
+    --fs-large: 1rem;
+    --fs-medium: 0.875rem;
+    --fs-small: 0.75rem;
+
+    --spacing-xl: 2.625rem;
+    --spacing-large: 1.75rem;
+    --spacing-medium: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-tiny: 0.25rem;
+
+    --mobile-logo-height: 45px;
+ 
+    --imagine1-size: 150px;
+}
+*{ 
+    box-sizing: border-box;
+}
+.welcome{
+    background-color: var(--bg-primary);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome h1{
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .welcome h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Sectiunea trainers */
+
+.trainers {
+    padding: var(--spacing-medium) var(--spacing-small);
+    
+}
+
+.trainers-container {
+    padding-bottom: var(--spacing-large);
+    display: flex;
+    flex-wrap: wrap;
+}
+.trainers .trainers-card {
+    width: 25%;
+    padding: 0 var(--spacing-small);
+}
+.trainers .trainer{
+    width: 100%;
+    min-height: 350px;
+    padding: var(--spacing-small);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: calc(2 * var(--spacing-xl));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainers .imagine {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -70px;
+  
+    
+}
+.trainer img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+}
+.trainer h3 {
+    width: 100%;
+    font-size: var(--fs-large);
+    font-weight: 400;
+    text-align: center;
+    background-color: rgba(20, 30, 76, 0.9);
+    border-radius: 5px;
+    padding: var(--spacing-tiny) 0;
+    margin-bottom: var(--spacing-medium);
+    margin-top: -25px;
+    z-index: 1;
+}
+@media (max-width: 992px) {
+    .trainers .trainers-card {
+        width: calc(100% / 3)
+    }
+}
+
+@media (max-width: 768px) {
+    .trainers .trainers-card {
+        width: 50%
+    }
+
+    .trainers .trainer {
+        min-height: 310px;
+    }
+}
+
+@media (max-width: 576px) {
+    .trainers .trainers-card {
+        width: 100%
+    }
+
+    .trainers .trainer {
+        min-height: 0;
+    }
+
+    .trainer p {
+        margin-bottom: var(--spacing-medium);
+    }
+}

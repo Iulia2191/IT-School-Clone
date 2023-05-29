@@ -1,0 +1,87 @@
+:root {
+    --text-primary: #101d42;
+    --text-secondary: #fbb44c;
+    --text-dark: #2b2922;
+    --text-light: #eaeaea;
+    --text-white: #ffffff;
+
+    --bg-primary: #141e4c;
+    --bg-secondary: #dfedf5;
+    --bg-dark: #101d42;
+    --bg-light: #ffffff;
+
+    --button-color: #2bb686;
+
+    --fs-large: 1rem;
+    --fs-medium: 0.875rem;
+    --fs-small: 0.75rem;
+
+    --spacing-xl: 2.625rem;
+    --spacing-large: 1.75rem;
+    --spacing-medium: 1rem;
+    --spacing-small: 0.5rem;
+    --spacing-tiny: 0.25rem;
+
+    --mobile-logo-height: 45px;
+}
+
+/* Sectiunea Welcome */
+
+.welcome{
+    background-color: var(--bg-primary);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h1{
+    color: var(--text-light);
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.5rem;
+
+}
+
+/* Sectiunea cursuri */
+
+.programe{
+    padding: var(--spacing-large);
+}
+
+.microsoft-logo{
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+}
+.first h2, p{
+    text-align: center;
+    padding: var(--spacing-large);
+}
+
+.first h2{
+    font-weight: 600;
+    color: var(--text-primary) !important;
+}
+
+.card-title{
+   text-align: justify; 
+   font-weight: 600;
+   font-size: 22px;
+   margin-bottom: var(--spacing-large);
+}
+.card-text{
+    color: #666;
+    text-align: justify;
+    margin-bottom: var(--spacing-medium);
+}
+.card span{
+    color: #666;
+    margin-bottom: var(--spacing-medium);
+    font-size: var(--fs-medium);
+
+}
+.date, .time, .business{
+    position: relative;
+    top: 3px;
+}
+
